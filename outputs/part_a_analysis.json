@@ -1,0 +1,133 @@
+{
+  "sql": {
+    "q1_customers": 30,
+    "q2_rows": 30,
+    "q2_total_revenue_inr": 2998668.8,
+    "q2_largest_cell": {
+      "city": "Bengaluru",
+      "category": "Electronics",
+      "revenue_inr": 233909.45
+    },
+    "q3_products": 11,
+    "q4_customers_without_completed_orders": 25,
+    "q5_customers_above_average": 550,
+    "q5_average_customer_spend_inr": 2552.06,
+    "q6_top_customer_by_city": [
+      {
+        "city": "Bengaluru",
+        "customer_id": "C0082",
+        "total_spend": 12856.2
+      },
+      {
+        "city": "Chennai",
+        "customer_id": "C0930",
+        "total_spend": 10151.4
+      },
+      {
+        "city": "Delhi",
+        "customer_id": "C0291",
+        "total_spend": 13742.6
+      },
+      {
+        "city": "Hyderabad",
+        "customer_id": "C0743",
+        "total_spend": 12730.05
+      },
+      {
+        "city": "Mumbai",
+        "customer_id": "C0693",
+        "total_spend": 14766.55
+      },
+      {
+        "city": "Pune",
+        "customer_id": "C0426",
+        "total_spend": 10377.1
+      }
+    ],
+    "q6_rank_vs_row_number_differences": 8,
+    "q7_daily_rows": 183,
+    "q7_last_cumulative_revenue_inr": 2998668.8
+  },
+  "pandas": {
+    "pivot_grand_total_inr": 2998668.8,
+    "city_aggregates": [
+      {
+        "city": "Bengaluru",
+        "sum_inr": 523643.4,
+        "mean_inr": 276.47,
+        "count": 1894
+      },
+      {
+        "city": "Chennai",
+        "sum_inr": 463629.15,
+        "mean_inr": 272.72,
+        "count": 1700
+      },
+      {
+        "city": "Delhi",
+        "sum_inr": 502829.8,
+        "mean_inr": 243.62,
+        "count": 2064
+      },
+      {
+        "city": "Hyderabad",
+        "sum_inr": 528589.9,
+        "mean_inr": 284.95,
+        "count": 1855
+      },
+      {
+        "city": "Mumbai",
+        "sum_inr": 479058.5,
+        "mean_inr": 297.0,
+        "count": 1613
+      },
+      {
+        "city": "Pune",
+        "sum_inr": 500918.05,
+        "mean_inr": 252.48,
+        "count": 1984
+      }
+    ],
+    "amount_mean_inr": 269.91,
+    "amount_median_inr": 135.0,
+    "amount_skewness": 4.61,
+    "q1_inr": 64.8,
+    "q2_median_inr": 135.0,
+    "q3_inr": 297.0,
+    "lower_fence_inr": -283.5,
+    "upper_fence_inr": 645.3,
+    "outliers_below_lower_fence": 0,
+    "outliers_above_upper_fence": 897,
+    "largest_absolute_correlation": {
+      "left": "order_amount",
+      "right": "discount_pct",
+      "value": -0.095
+    },
+    "correlation_matrix": {
+      "order_amount": {
+        "order_amount": 1.0,
+        "discount_pct": -0.095,
+        "quantity": 0.087,
+        "delivery_minutes": -0.003
+      },
+      "discount_pct": {
+        "order_amount": -0.095,
+        "discount_pct": 1.0,
+        "quantity": -0.0,
+        "delivery_minutes": -0.01
+      },
+      "quantity": {
+        "order_amount": 0.087,
+        "discount_pct": -0.0,
+        "quantity": 1.0,
+        "delivery_minutes": -0.013
+      },
+      "delivery_minutes": {
+        "order_amount": -0.003,
+        "discount_pct": -0.01,
+        "quantity": -0.013,
+        "delivery_minutes": 1.0
+      }
+    }
+  }
+}
